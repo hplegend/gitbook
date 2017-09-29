@@ -2,6 +2,43 @@ ref：[http://dubbo.io/](http://dubbo.io/)
 
 dubbo是阿里出的一个RPC框架，支持远程服务调用。
 
+
+
+pmo依赖：
+
+```
+ <properties>
+        <dubbo_version>2.5.5</dubbo_version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo_version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
+    </dependencies>
+
+```
+
+
+
 ## provider
 
 服务的提供方： 提供服务接口，同时实现服务。
