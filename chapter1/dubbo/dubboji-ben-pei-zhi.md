@@ -44,8 +44,6 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://code.ali
 </beans>
 ```
 
-
-
 ## consumer
 
 调用
@@ -88,18 +86,13 @@ pom：
             <artifactId>dubboprovider</artifactId>
             <version>1.0-SNAPSHOT</version>
 </dependency>
-
 ```
-
-
 
 特别注意：
 
-    **消费者需要知道服务提供者提供的接口，否则无法调用，也无法配置xml。通过在pom中引入接口提供的包，或者导入接口的jar包。**
-
-
-
-
+```
+**消费者需要知道服务提供者提供的接口，否则无法调用，也无法配置xml。通过在pom中引入接口提供的包，或者导入接口的jar包。**
+```
 
 
 
