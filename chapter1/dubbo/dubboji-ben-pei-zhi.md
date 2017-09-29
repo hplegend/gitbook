@@ -2,8 +2,6 @@ ref：[http://dubbo.io/](http://dubbo.io/)
 
 dubbo是阿里出的一个RPC框架，支持远程服务调用。
 
-
-
 pmo依赖：
 
 ```
@@ -34,10 +32,7 @@ pmo依赖：
             <artifactId>dubbo</artifactId>
         </dependency>
     </dependencies>
-
 ```
-
-
 
 ## provider
 
